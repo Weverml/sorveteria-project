@@ -1,4 +1,4 @@
-package abistracao;
+package abstracao;
 
 public abstract class Sorvete {
   
