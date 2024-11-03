@@ -5,9 +5,7 @@ import java.util.Scanner;
 import Cardapio.Cardapio;
 
 public class Adicionais {
-    public static Scanner leitor = new Scanner(System.in);
-    public static Scanner leitorInt = new Scanner(System.in);
-	
+   
 	private Cardapio cardapio = new Cardapio();
 	private String[] escolha = new String[2];
     private double preco = 0;
@@ -23,6 +21,11 @@ public class Adicionais {
 	public String[] getEscolha() {
 		return escolha;
 	}
+
+
+	public static Scanner leitor = new Scanner(System.in);
+    public static Scanner leitorInt = new Scanner(System.in);
+
 	
 	public boolean lerAdicionais(){
 		System.out.println("\n===================================================");
