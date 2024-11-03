@@ -19,8 +19,6 @@ public abstract class Acai extends ProdutoGelado{
 
 	public abstract void lerRecipiente();
 	
-	public abstract void lerSabores(); 
-
 	public abstract void lerAdicionais(); 
 
 
