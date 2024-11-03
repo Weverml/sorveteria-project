@@ -1,22 +1,23 @@
 package abstracao;
 
 import Cardapio.Cardapio;
+import adicionais.Adicionais;
 import produto.ProdutoGelado;
 
 public abstract class Sorvete extends ProdutoGelado {
 	
-	private int quantBolas;
-	private String calda;
-	
+	protected int quantBolas;
+	protected String calda;
+	protected Adicionais adicional;
 	
 	public Sorvete() {
 		
 	}
-    public Sorvete(int recipiente, double preco, String sabor[], Cardapio opcoes, int quantBolas,  String calda ) {
+    public Sorvete(int recipiente, double preco, String sabor[], Cardapio opcoes, int quantBolas,  String calda, Adicionais adicional ) {
     	super(recipiente, preco, sabor, opcoes);
     	this.quantBolas = quantBolas;
     	this.calda = calda;
-		
+			this.adicional = adicional;
 	}
 	public int getQuantBolas() {
 		return quantBolas;
