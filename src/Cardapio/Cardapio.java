@@ -8,8 +8,7 @@ public class Cardapio {
     private String adicionaisFruta[] = { "Morango", "Banana", "Kiwi" };
     private String recipienteSorteve[] = { "Casquinha", "Copo", "Cascão" };
     private String recipienteAcai[] = { "Tigela", "Copo- 200ml", "Copo- 500ml" };
-    private String saboresAcai[] = { "Tradicional", "Com Banana", "Com Morango", "Com Kiwi", "Com Abacaxi",
-            "Com Maracujá" };
+    private String acaiMesclado[] = {"Com Banana", "Com Morango", "Com Kiwi", "Com Abacaxi", "Com Maracujá" };
 
     public String[] getSaboresSorvete() {
         return saboresSorvete;
@@ -39,8 +38,8 @@ public class Cardapio {
         return recipienteAcai;
     }
 
-    public String[] getSaboresAcai() {
-        return saboresAcai;
+    public String[] getAcaiMesclado() {
+        return acaiMesclado;
     }
 
     public void ImprimirCardapio() {
@@ -50,10 +49,15 @@ public class Cardapio {
         System.out.println("===========================================================\n");
 
         System.out.println("\n************************************************************");
-        System.out.println("                           SORVETE!                         ");
+        System.out.println("                        SORVETE!                         ");
         System.out.println("************************************************************\n");
 
-        System.out.println("- SABORES:  \n");
+        System.out.println("- TEMOS SORVETE VEGANO E O TRADICIONAL!\n");
+        
+
+        System.out.println("------------");
+        System.out.println("- SABORES:  ");
+        System.out.println("------------\n");
 
         for (int i = 0; i < saboresSorvete.length; i++) {
             System.out.println("- " + saboresSorvete[i]);
@@ -68,21 +72,26 @@ public class Cardapio {
 
         }
 
-        System.out.println("\n- BOLA DE SORVETE:                         PREÇO:\n");
-        System.out.println("- Unidade...............................: R$ 1,50");
+        System.out.println("\n- BOLA DE SORVETE:                            PREÇO:");
+        System.out.println("- Tradicional...............................: R$ 1,50");
+        System.out.println("- Vegano....................................: R$ 2,50");
 
         System.out.println("\n************************************************************");
-        System.out.println("                            AÇAÍ!                          ");
+        System.out.println("                            AÇAI!                          ");
         System.out.println("************************************************************\n");
 
-        System.out.println("- SABORES: \n ");
+        System.out.println("- TEMOS O AÇAI TRADICIONAL E MESCLADO COM FRUTA!\n");
 
-        for (int i = 0; i < saboresAcai.length; i++) {
-            System.out.println("- " + saboresAcai[i]);
+        System.out.println("------------------");
+        System.out.println("- AÇAI MESCLADO:  ");
+        System.out.println("------------------\n");
+
+        for (int i = 0; i < acaiMesclado.length; i++) {
+            System.out.println("- " + acaiMesclado[i]);
 
         }
 
-        System.out.println("\n- JÁ VEM INCLUSO OS ADICIONAIS: \n");
+        System.out.println("\n- Ja VEM INCLUSO OS ADICIONAIS: \n");
         for (int i = 0; i < adicionaisAcai.length; i++) {
             System.out.println("- " + adicionaisAcai[i]);
         }
@@ -96,7 +105,7 @@ public class Cardapio {
         System.out.println("- Cascão......................................: R$ 1,00");
         System.out.println("- Copo........................................: R$ 0,00");
 
-        System.out.println("\n- RECIPIENTE DO AÇAÍ:                       PREÇO:\n");
+        System.out.println("\n- RECIPIENTE DO AÇAi:                       PREÇO:\n");
         System.out.println("- Copo 200ml.............................: R$  3,50");
         System.out.println("- Copo 500ml.............................: R$  7,00");
         System.out.println("- Tigela.................................: R$  10,00");
